@@ -1,0 +1,46 @@
+/* pages/question/question.wxss */
+.page{
+  background: #f6f8f9;
+}
+.logo{
+  display: flex;
+  height: 180rpx;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+.welcome{
+  color: #a7a7a7;
+  padding: 0 0 0 32rpx;
+  font-size: 40rpx;
+}
+.main{
+  margin: 16rpx 32rpx;
+  padding: 80rpx 0 60rpx 0;
+  border-radius: 20rpx;
+  background: #fafafa;
+  box-shadow: 10rpx 10rpx 10rpx #a7a7a7;
+}
+.title{
+  padding: 0 0 0 48rpx;
+}
+.topic{
+  color: #676767;
+}
+.group{
+  display: flex;
+  flex-direction: column;
+  padding: 8rpx 0  0 ;
+}
+.group-item{
+  display: flex;
+  align-items: stretch;
+}
+.group-item-lable{
+  flex: 1;
+  padding: 16rpx 32rpx; 
+}
+.next, .sub{
+  margin: 24rpx 0;
+  padding: 0 16rpx;
+}

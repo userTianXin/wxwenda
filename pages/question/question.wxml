@@ -1,0 +1,36 @@
+<!--pages/question/question.wxml-->
+<view>
+  <view class="logo">
+    <text>调查问卷页面</text>
+  </view>
+  <view class="welcome">
+    <text>欢迎:{{userInfo.nickName}}</text>
+  </view>
+  <view class="main">
+    <view class="title">
+      <text>{{question[nowQs].title}}</text>
+    </view>
+    <view class="topic" wx:if="{{question[nowQs].type==='radio'}}">
+      <radio-group class="group" bindchange="formChange">
+        <view class="group-item" wx:for="{{question[nowQs].options}}">
+          <label class="group-item-lable">
+            <radio value="{{item.value}}" />{{item.lable}}</label>
+        </view>
+      </radio-group>
+    </view>
+    <view class="topic" wx:if="{{question[nowQs].type==='checkbox'}}">
+      <checkbox-group class="group" bindchange="formChange">
+        <view class="group-item" wx:for="{{question[nowQs].options}}">
+          <label class="group-item-lable">
+            <checkbox value="{{item.value}}" />{{item.lable}}</label>
+        </view>
+        </checkbox-group>
+    </view>
+  </view>
+  <view class="next" wx:if="{{nowQs!==question.length - 1}}" bindtap="nextQuestion">
+    <button>下一题</button>
+  </view>
+  <view class="submit"wx:if="{{nowQs===question.length-1}}">
+    <button bindtap="subAnswers">提交</button>
+  </view>
+</view>

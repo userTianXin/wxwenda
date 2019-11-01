@@ -1,0 +1,28 @@
+/* pages/home/home.wxml.wxss */
+.images{
+  width: 100%;
+}
+.question-container {
+  width: 700rpx;
+  border: 4px solid #eee;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+.title{
+  display: block;
+  margin-top: 30rpx;
+  font-size: 40rpx;
+}
+.time{
+  margin-bottom: 14rpx;
+}
+.play{
+  width: 680rpx;
+  height: 100rpx;
+  border: 1px solid #eee;
+  font-size: 40rpx;
+  text-align:center;
+  line-height: 100rpx;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml.wxml-->
+<swiper autoplay="true" indicator-dots="true" duration="1000" interval="2000">
+  <swiper-item wx:for="{{imgUrls}}" wx:key="index">
+    <image class="images" src="{{item}}"></image>
+  </swiper-item>
+</swiper>
+<view class="question-container">
+  <text class="title">问卷调查时间：</text>
+  <view class="time">2019-9.23~2019-9.24</view>
+  <text class="content">请根据真实情况如实答卷，以下是简短的说明。问卷调查样本服务是指在自身专业的在线问卷调查平台的基础上提供的一项增值服务，帮助邀请符合条件的目标人群填写问卷，以最低成本在最短时间内回收到所需的数据，是进行各种类型市场调查、学术调研的工具。</text>
+</view>
+<button  class="play" bindtap="onPenClick">开始填写</button>
